@@ -1,0 +1,45 @@
+// Place all the styles related to the Teams controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+.search{
+	position:absolute;
+	height:30px;
+	width:60%;
+	background-color:#F5F5F5;
+	color:black;
+	font-size:16px;
+}
+
+.searchbackground{
+	height:0px;
+	background-color:white;
+}
+
+.buttonsubmit{
+	position:relative;
+	left:200px;
+}
+
+.line1{
+	position:relative;
+	top:100px;
+	height:1px;
+	background-color:#F5F5F5;
+}
+
+.results{
+	margin-top:140px;
+	padding:20px;
+}
+
+.eachresult{
+	margin:10px;
+	float:left;
+	border:1px solid #72B7ED;
+	padding:20px;
+	background-color:#F5F5F5;
+	-moz-box-shadow: 0 0 5px #888;
+	-webkit-box-shadow: 0 0 5px#888;
+	box-shadow: 0 0 2px #888;
+}

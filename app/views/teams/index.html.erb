@@ -1,0 +1,25 @@
+<div class="searchbackground">
+<%= search_form_for @search do |f| %>
+<div class="span6 offset2">
+  <%= f.text_field :name_cont, :class=> "search", :placeholder => "What sports team are you looking for?" %>
+</div>
+<% end %>
+
+<div class="line1">
+</div>
+
+</div>  
+
+<div class="results">
+		
+<% if params[:q].present?%>
+<% @teams.each do |team| %>
+<div class="eachresult"><br>
+<b><%= team.venue.name %></b><br>
+<%= team.venue.address%><br><br>
+</div>
+<% end %>
+<% end %>
+</div>
+
+
