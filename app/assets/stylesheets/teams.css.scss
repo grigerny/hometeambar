@@ -23,7 +23,7 @@
 
 .results{
 	position:absolute;
-	margin-top:100px;
+	margin-top:90px;
 	margin-right:350px;
 	padding:20px;
 	left:0px;
@@ -70,12 +70,18 @@
 .sidebar{
 	position:absolute;
 	left:900px;
-	top:162px;
-	width:20%;
+	top:161px;
+	width:30%;
 	height:100%;
 	background-color:white;
+	border:1px solid #F5F5F5;
 }
 
+.twittertitle{
+	font-family:CollegiateInsideFLF;
+	margin-top:50px;
+	font-size:20px;
+}
 .sidebarcontent{
 	text-align:center;
 }
@@ -102,4 +108,6 @@
    width:100%;
    background:#F5F5F5;
 }
+
+
 

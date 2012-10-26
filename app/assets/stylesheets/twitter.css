@@ -1,0 +1,25 @@
+
+/** Style the tweets */
+.twitters {
+  padding: 5px;
+  overflow: auto;
+}
+
+.twitters ul {
+  list-style: none;
+  padding: 0;
+  white-space: nowrap;
+}
+
+.twitters span.prefix {
+  font-weight: bold;
+}
+
+.twitters span.time {
+  font-style: italic;
+  color: #c5c5c5;
+}
+
+.twitters span.status {
+  font-style: italic;
+}

@@ -45,8 +45,11 @@ Sweet! We found <%= pluralize(@search.result.count, 'bar') + "!" %>
 
 <div class="sidebar">
 	<div class="sidebarcontent">
-		<a class="twitter-timeline" href="https://twitter.com/HomeTeamBar" data-widget-id="261592154726612993">Tweets by @HomeTeamBar</a>
-		<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+			<div class="twittertitle">
+				<b><%= link_to 'HomeTeamBar Twitter', "https://twitter.com/HomeTeamBar" %></b><br><br>
+			<div id="tweet">
+			</div>
+		</div>
 	</div>
 </div>
 
