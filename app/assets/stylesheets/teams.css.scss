@@ -34,9 +34,11 @@
 	float:left;
 	padding:20px;
 	background-color:#F5F5F5;
-	-moz-box-shadow: 0 0 5px #888;
-	-webkit-box-shadow: 0 0 5px#888;
+	-moz-box-shadow: 0 0 3px #888;
+	-webkit-box-shadow: 0 0 3px#888;
 	box-shadow: 0 0 3px #888;
+	border-radius:10px;
+	border:1px solid #72B7ED;
 }
 
 .bar{
@@ -74,7 +76,7 @@
 	top:161px;
 	width:30%;
 	height:100%;
-	background-color:white;
+	background-color:transparent;
 	border:1px solid #F5F5F5;
 }
 
