@@ -15,7 +15,7 @@
 <div class="line1">
 </div>
 
-<div class="results"> 
+<div class="results"> 	
 <% if @search.result.blank? %>	
 <div class="resultsmessage1">
 "Boo! your search came up empty. We are always looking for bars to add to our database. If you know one, please shoot us an
@@ -30,7 +30,8 @@ Sweet! We found <%= pluralize(@search.result.count, 'bar') + "!" %>
 <br>
 <% @teams.each do |team| %>
 <div class="eachresult"><br>
-	<div class="bar">
+<div class="bar">
+   Root for <%= team.name %><br> at
 <b><%= team.venue.name %></b><br>
 </div>
 <div class="baraddress">
