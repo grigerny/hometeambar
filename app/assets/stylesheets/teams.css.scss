@@ -2,47 +2,43 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+.topbar{
+	background-color:transparent;
+	width:100%;
+	left:0px;
+	height:140px;
+}
+.searchbackground{
+	margin-top:40px;
+}
 .search{
 	position:absolute;
 	height:30px;
-	width:60%;
-	left:240px;
-	background-color:#F5F5F5;
+	width:580px;
+	background-color:white;
 	color:black;
 	font-size:16px;
 }
 
-.line1{
-	position:absolute;
-	top:160px;
-	left:0px;
-	width:100%;
-	height:2px;
-	background-color:#F5F5F5;
-}
+.fb-like{
+	top:20px;
+	left:550px;
+}	
+
 
 .results{
 	position:absolute;
-	margin-top:90px;
-	padding:20px;
-	width:65%;
-	left:0px;
+	width:80%;
 }
 
 .eachresult{
-	margin:10px;
-	float:left;
-	padding:20px;
-	background-color:#F5F5F5;
-	-moz-box-shadow: 0 0 3px #888;
-	-webkit-box-shadow: 0 0 3px#888;
-	box-shadow: 0 0 3px #888;
-	border-radius:10px;
-	border:1px solid #72B7ED;
+	position:relative;
+	width:80%;
+	padding:5px;
 }
 
 .bar{
-	font-family:CollegiateInsideFLF;
+	font-family:Arial;
 	text-align:center;
 	top:-20px;
 	position:relative;
@@ -56,32 +52,14 @@
 }
 
 .title{
-	padding:20px;
-	position:relative;
-	font-size:50px;
-	text-align:center;
-	font-family:CollegiateHeavyOutline;
-	color:#982B41;
-}
-
-.fb-like{
-	position:relative;
-	left:560px;
-}	
-
-.sidebar{
 	position:absolute;
-	margin-left:40px;
-	left:800px;
-	top:161px;
-	width:30%;
-	height:100%;
-	background-color:transparent;
-	border:1px solid #F5F5F5;
+	font-size:50px;
+	color:#0088CC;
 }
+
 
 .twittertitle{
-	font-family:CollegiateInsideFLF;
+	font-family:Arial	;
 	margin-top:50px;
 	font-size:20px;
 }
@@ -93,14 +71,15 @@
 	color:red;
 	font-size:20px;
 	margin-right:70px;
-	font-family:CollegiateInsideFLF;
+	font-family:Arial;
 }
 
 .resultsmessage2{
-	text-align:center;
+	padding:14px;
 	font-size:20px;
-	font-family:CollegiateInsideFLF;
+	font-family:Arial;
 }
+
 
 .footbar{
    text-align:right;
@@ -113,5 +92,8 @@
    color:black;
 }
 
+#hr{
+	color:black;
+}
 
 

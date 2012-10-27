@@ -1,7 +1,24 @@
-
+<div class="container-fluid">
+<div class="row-fluid">
+	
+	<div class="span2">
+			<ul class="nav nav-list">
+				<ul class="nav nav-list">
+				  <li class="active"><a href="http://hometeambar.com">Home</a></li>
+				  <li><a href="https://twitter.com/HomeTeamBar">Know a bar?</a></li>
+				  <li><a href="https://twitter.com/HomeTeamBar">Our Twitter</a></li>
+				<li><a href="https://twitter.com/HomeTeamBar">Our Facebook</a></li>
+				<li><a href="https://twitter.com/HomeTeamBar">Contact us</a></li>
+			</ul>
+	 </div>
+	
+<div class="span10">
+<div class="topbar">
+<h1>
 <div class="title">
-<%= link_to 'HomeTeamBar.com', root_path %>
+HomeTeamBar.com
 </div>
+</h1>
 
 <div class="fb-like" data-href="https://www.facebook.com/pages/HomeTeamBarcom/132253690255919" data-send="true" data-layout="button_count" data-width="450" data-show-faces="true" data-font="lucida grande"></div>
 
@@ -11,8 +28,6 @@
 </div>  
 <% end %>
 
-
-<div class="line1">
 </div>
 
 <div class="results"> 	
@@ -24,16 +39,17 @@
 </div>
 <% else %>
 <% if params[:q].present? %>
-<div class="resultsmessage2">
-Sweet! We found <%= pluralize(@search.result.count, 'bar') + "!" %> 
+<div class="page-header">
+  <h1>Search Results <small><%= pluralize(@search.result.count, 'bar') %> </small></h1>
 </div>
 <br>
 <% @teams.each do |team| %>
 <div class="eachresult"><br>
 <div class="bar">
-   Root for the <%= team.name %><br> at
+<b> <%= team.name %></b> @ 
 <b><%= team.venue.name %></b><br>
 </div>
+
 <div class="baraddress">
 <%= team.venue.address%><br>
 <%=link_to 'Get Directions', "https://maps.google.com/?q=#{team.venue.name + " " + team.venue.address}"%>
@@ -44,16 +60,8 @@ Sweet! We found <%= pluralize(@search.result.count, 'bar') + "!" %>
 <% end %>
 </div>
 
-<div class="sidebar">
-	<div class="sidebarcontent">
-			<div class="twittertitle">
-				<b><%= link_to 'HomeTeamBar Twitter', "https://twitter.com/HomeTeamBar" %></b><br><br>
-			<div id="tweet">
-			</div>
-		</div>
-	</div>
 </div>
 
-<div class="footbar">
-	  <right> | in Beta - currently NYC only | HomeTeamBar © | <%= mail_to "hometeambar@gmail.com", "Questions?", :subject => "I have a question" %> | </right>
+
 	</div>
+</div>
