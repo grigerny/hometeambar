@@ -22,7 +22,7 @@
 
 .fb-like{
 	top:20px;
-	left:550px;
+	left:460px;
 }	
 
 
@@ -80,20 +80,31 @@
 	font-family:Arial;
 }
 
-
-.footbar{
-   text-align:right;
-   position:fixed;
-   left:0px;
-   bottom:0px;
-   height:30px;
-   width:100%;
-   background:transparent;
-   color:black;
-}
-
 #hr{
 	color:black;
 }
 
+.icon-search{
+	font-size:36px;
+	color:#0088CC;
+}
 
+.footer{
+	position:fixed;
+	bottom: 0px; /* negative value of footer height */
+	left:0px;
+	height:28px;
+	width:100%;
+	background-color:#E0E0E0;
+	color:black;
+}
+
+.beta{
+	color:gray;
+	background-color:transparent;
+	position:fixed;
+	width:100%;
+	bottom: 0px; /* negative value of footer height */
+	right:0px;
+	text-align:right;
+}
